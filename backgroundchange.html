@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+var images = [
+ 'Tesr.png',
+ 'Your\ paragraph\ text\ \(1\).png',
+ 'background.png'
+ 
+];
+
+
+
+var currentImageIndex = 0;
+
+function changeBackground() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  var currentImage = images[currentImageIndex];
+  document.body.style.backgroundImage = 'url(' + currentImage + ')';
+}
+
+
+
+
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #bg-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+body {
+  background-image: url("Your\ paragraph\ text\ \(1\).png");
+  background: cover;
+}
+
+  </style>
+</head>
+<body>
+  <button id="bg-button" onclick="changeBackground()">Change background</button>
+
+ <a href="Te"
+
+</body>
+</html>
